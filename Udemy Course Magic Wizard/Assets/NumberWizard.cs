@@ -24,7 +24,15 @@ public class NumberWizard : MonoBehaviour
         //Detect when the up arrow key is pressed down
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            Debug.Log("Up Arrow key was pressed"); 
+            Debug.Log("Up Arrow key was pressed.");
+        }
+        if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            Debug.Log("Down Arrow key was pressed.");
+        }
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            Debug.Log("You pressed Enter.");
         }
     }
 }
