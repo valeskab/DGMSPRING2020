@@ -133,13 +133,8 @@ GameObject:
   - component: {fileID: 628047577}
   - component: {fileID: 628047576}
   m_Layer: 0
-<<<<<<< Updated upstream
   m_Name: Floor
   m_TagString: Floor
-=======
-  m_Name: Plane
-  m_TagString: Untagged
->>>>>>> Stashed changes
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -395,13 +390,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1064936728}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-<<<<<<< Updated upstream
   m_LocalPosition: {x: -0.00000015836, y: 4.85, z: -6.393}
   m_LocalScale: {x: 3.3483813, y: 3.3483813, z: 3.3483813}
-=======
-  m_LocalPosition: {x: -0.00000022901, y: 4.85, z: -6.393}
-  m_LocalScale: {x: 4.8422, y: 4.8422, z: 4.8422}
->>>>>>> Stashed changes
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -591,7 +581,6 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1263002570}
-<<<<<<< Updated upstream
   m_LocalRotation: {x: 0.0015673575, y: -0, z: -0, w: 0.99999875}
   m_LocalPosition: {x: 0.07, y: 2.06, z: -27.54}
   m_LocalScale: {x: 1.6313602, y: 1.6313602, z: 1.6313602}
@@ -599,15 +588,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0.18, y: 0, z: 0}
-=======
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.07, y: 0.58, z: -23.64}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
->>>>>>> Stashed changes
 --- !u!114 &1263002575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -620,13 +600,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f17902e1e78339f438616f09b685ade2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< Updated upstream
   speed: 10
   turnSpeed: 100
   verticalInput: 1
   horizontalInput: 1
-=======
->>>>>>> Stashed changes
 --- !u!54 &1263002576
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -657,13 +634,8 @@ GameObject:
   - component: {fileID: 1811903367}
   - component: {fileID: 1811903371}
   m_Layer: 0
-<<<<<<< Updated upstream
   m_Name: Obstacle
   m_TagString: Obstacle
-=======
-  m_Name: Cube
-  m_TagString: Untagged
->>>>>>> Stashed changes
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -734,13 +706,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1811903366}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-<<<<<<< Updated upstream
   m_LocalPosition: {x: 0.54, y: 1.73, z: -10.6}
   m_LocalScale: {x: 2.9119735, y: 2.9119735, z: 2.9119735}
-=======
-  m_LocalPosition: {x: 0.68, y: 1.73, z: -14.96}
-  m_LocalScale: {x: 3.3562, y: 3.3562, z: 3.3562}
->>>>>>> Stashed changes
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -761,7 +728,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
-<<<<<<< Updated upstream
 --- !u!1 &1865921510
 GameObject:
   m_ObjectHideFlags: 0
@@ -806,5 +772,3 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
-=======
->>>>>>> Stashed changes
