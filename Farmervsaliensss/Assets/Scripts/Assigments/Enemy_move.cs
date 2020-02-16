@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Enemy_move : MonoBehaviour
 {
+    public Transform target;
+    public float moveSpeed;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +16,7 @@ public class Enemy_move : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        transform.LookAt(target);
+        transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);
     }
 }
