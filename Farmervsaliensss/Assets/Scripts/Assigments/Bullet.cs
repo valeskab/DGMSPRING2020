@@ -9,7 +9,7 @@ public class Bullet : MonoBehaviour
     
     void Start()
     {
-        //StartCoroutine(DestroyBullet());
+        StartCoroutine(DestroyBullet());
     }
 
     void OnCollisionEnter(Collision other)
@@ -29,17 +29,10 @@ public class Bullet : MonoBehaviour
 
     }
 
-    int Calc(int num1, int num2)
-    {
-        int total;
-
-        total = num
-    }
-
-
-
     IEnumerator DestroyBullet()
     {
         yield return new WaitForSeconds(time);
+        Destroy(gameObject);
     }
+    
 }
