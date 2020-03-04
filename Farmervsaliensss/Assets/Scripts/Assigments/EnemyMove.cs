@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy_move : MonoBehaviour
+public class EnemyMove : MonoBehaviour
 {
     public GameObject player;
     //public Transform target; //transform.translate example
