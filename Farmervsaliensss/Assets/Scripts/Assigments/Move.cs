@@ -4,69 +4,36 @@ using UnityEngine;
 
 public class Move : MonoBehaviour
 {
+    // Variables
+    //Access Modifier - Type - Name ;
     public float speed;
     public float turnSpeed;
     public float verticalInput;
-    public float horizontalInput;
+    public float horizontInput;
 
-    public float jumpHeight;
-    public bool isGrounded;
-
-    private Rigidbody rb;
-
-    public GameObject projectilePrefab;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        //Initalized input variables with input source values
         verticalInput = Input.GetAxis("Vertical");
-        horizontalInput = Input.GetAxis("Horizontal");
+        horizontInput = Input.GetAxis("Horizontal");
 
-        transform.Translate(Vector3.forward * speed * Time.deltaTime * verticalInput);
-        transform.Rotate(Vector3.up * turnSpeed * Time.deltaTime * horizontalInput);
+        // Moves the controller forward and backwards based on vertical input
 
-        if(Input.GetButtonDown("Jump") && isGrounded)
-        {
-            rb.AddForce(Vector3.up * jumpHeight * 1000 * Time.deltaTime);
-        }
+        transform.Translate(Vector3.forward * Time.deltaTime * speed * verticalInput);
 
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
-        }
+        // Rotates the controller left and right based on horizontal input
 
-        // (x,y,z)
+        transform.Rotate(Vector3.up, Time.deltaTime * turnSpeed * horizontInput);
+
+
     }
-
-    // Detect collision with another object
-   /* void OnCollisionEnter(Collision other)
-    {
-
-        if(other.gameObject.CompareTag("Floor"))// Primary
-        {
-            Debug.Log("Colliding with Floor");
-        }
-        else if(other.gameObject.CompareTag("Obstacle"))//Secondary
-        {
-            Debug.Log("Colliding with Obstacle");
-        }
-        else // Default
-        {
-            Debug.Log("...");
-        }
-    }
-
-    void OnTriggerEnter(Collider other)
-    {
-        Debug.Log("You have entered the trigger");
-     
-    }
-    */
 }
