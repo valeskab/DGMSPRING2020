@@ -4,15 +4,29 @@ using UnityEngine;
 
 public class Attack : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public int damage;
+    public Transform target;
+
+    public float moveSpeed;
+
+    void OnTriggerEnter(Collider other)
     {
-        
+        if (other.gameObject.name == "Player")
+        {
+            transform.LookAt(target);
+            transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnCollisionEnter(Collision other)
     {
-        
+
+        print("Enemy is attacking!");
+        var health = other.gameObject.GetComponent<PlayerHealth>();
+
+        if (health != null)
+        {
+            health.TakeDamage(damage);
+        }
     }
 }
